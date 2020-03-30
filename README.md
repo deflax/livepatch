@@ -1,48 +1,48 @@
 digital music setup deflax 2020
 
 software:
+- jack:
+  - links:
+    - from system capture mic to traktor
+    - from traktor to ableton
+    - from ableton to system playback
+- ableton live lite 10:
+  - provides:
+    - traktor decks A to D tracks via in 1/2, 3/4, 5/6, 7/8
+    - reason host via rewire
+    - main mixer output via out 1/2
+    - cue via out 3/4
 - native instruments traktor pro 3
-  provides:
-    - master clock via generic midi
-    - 3d party audio beatmatched and routed via jack (audio only, no timeline sync)
-
+  - provides:
+    - master clock via ableton link
+    - 3d party tracks beatmatched and routed via jack (audio only, no timeline sync)
 - propellerhead reason 10
-  provides:
-    - mixing to 1/2
-    - dsp
-    - monitoring to 3/4
-    - modular synth
-    - drum machines
-  accepts:
-    - mic/line in 1/2
-
-controllers:
-- akai midi mix
-  controls:
-    - reason mixers
-    - dsp
-- novation remote le 25
-  controls:
+  - provides:
+    - effects dsp
     - modular synths
     - drum machines
 
-audio:
-- jack:
-  provides:
-    - audio input for reason
-  accepts:
-    - audio output for traktor
+controllers:
+- akai midimix
+  - controls:
+    - ableton main mixer
+- novation remote le 25
+  - controls:
+    - modular synths
+    - drum machines
+
+hardware:
 - focusrite scarlett 2i4 2nd Gen
-  provides:
+  - provides:
     - main output 1/2
     - headphones output 3/4
-  accepts:
+  - accepts:
     - mic/line in 1/2
 
 streaming:
 - obs:
-  accepts:
-    - main output 1/2
+  - accepts:
+    - input:  output 1/2
     - camera1: display capture of audio software
     - camera2: logitech c922 to record controllers
     - camera3: android ip cam (optional)
