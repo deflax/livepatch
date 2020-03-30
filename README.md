@@ -6,28 +6,24 @@ software:
     - from system capture mic to traktor
     - from traktor to ableton
     - from ableton to system playback
-
 - ableton live lite 10:
   - provides:
-    - mine mixer output to 1/4
-    - cue to output 3/4
-    - rewire host
-    - traktor decks A to D via in 1/2, 3/4, 5/6, 7/8
-
+    - traktor decks A to D tracks via in 1/2, 3/4, 5/6, 7/8
+    - reason host via rewire
+    - main mixer output via out 1/2
+    - cue via out 3/4
 - native instruments traktor pro 3
   - provides:
     - master clock via ableton link
-    - 3d party audio beatmatched and routed via jack (audio only, no timeline sync)
-
+    - 3d party tracks beatmatched and routed via jack (audio only, no timeline sync)
 - propellerhead reason 10
   - provides:
-    - effect dsp
-    - modular synth
+    - effects dsp
+    - modular synths
     - drum machines
 
-
 controllers:
-- akai midi mix
+- akai midimix
   - controls:
     - ableton main mixer
 - novation remote le 25
