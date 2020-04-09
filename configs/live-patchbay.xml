@@ -1,15 +1,9 @@
 <!DOCTYPE patchbay>
-<patchbay version="0.3.13.10" name="traktor2reason+reaper2obs">
+<patchbay version="0.3.13.10" name="traktor2reason">
  <output-sockets>
   <socket exclusive="off" client="system" type="jack-audio" name="system">
    <plug>capture_1</plug>
    <plug>capture_2</plug>
-  </socket>
-  <socket exclusive="off" client="Reason" type="jack-audio" name="Reason">
-   <plug>out1</plug>
-   <plug>out2</plug>
-   <plug>out3</plug>
-   <plug>out4</plug>
   </socket>
   <socket exclusive="off" client="Traktor-01" type="jack-audio" name="Traktor-01">
    <plug>out1</plug>
@@ -25,9 +19,11 @@
    <plug>out11</plug>
    <plug>out12</plug>
   </socket>
-  <socket exclusive="off" client="reaper" type="jack-audio" name="reaper">
-   <plug>out15</plug>
-   <plug>out16</plug>
+  <socket exclusive="off" client="Reason" type="jack-audio" name="Reason">
+   <plug>out1</plug>
+   <plug>out2</plug>
+   <plug>out3</plug>
+   <plug>out4</plug>
   </socket>
  </output-sockets>
  <input-sockets>
@@ -36,18 +32,6 @@
    <plug>playback_2</plug>
    <plug>playback_3</plug>
    <plug>playback_4</plug>
-  </socket>
-  <socket exclusive="off" client="Reason" type="jack-audio" name="Reason">
-   <plug>in1</plug>
-   <plug>in2</plug>
-   <plug>in3</plug>
-   <plug>in4</plug>
-   <plug>in5</plug>
-   <plug>in6</plug>
-   <plug>in7</plug>
-   <plug>in8</plug>
-   <plug>in9</plug>
-   <plug>in10</plug>
   </socket>
   <socket exclusive="off" client="Traktor-01" type="jack-audio" name="Traktor-01">
    <plug>in1</plug>
@@ -65,9 +49,17 @@
    <plug>in13</plug>
    <plug>in14</plug>
   </socket>
-  <socket exclusive="off" client="reaper" type="jack-audio" name="reaper">
-   <plug>in15</plug>
-   <plug>in16</plug>
+  <socket exclusive="off" client="Reason" type="jack-audio" name="Reason">
+   <plug>in1</plug>
+   <plug>in2</plug>
+   <plug>in3</plug>
+   <plug>in4</plug>
+   <plug>in5</plug>
+   <plug>in6</plug>
+   <plug>in7</plug>
+   <plug>in8</plug>
+   <plug>in9</plug>
+   <plug>in10</plug>
   </socket>
   <socket exclusive="off" client="Reason" type="jack-audio" name="Reason 2">
    <plug>in9</plug>
@@ -77,9 +69,8 @@
  <slots/>
  <cables>
   <cable output="system" input="Reason 2" type="jack-audio"/>
-  <cable output="Reason" input="reaper" type="jack-audio"/>
-  <cable output="Reason" input="system" type="jack-audio"/>
   <cable output="Traktor-01" input="Reason" type="jack-audio"/>
+  <cable output="Reason" input="system" type="jack-audio"/>
  </cables>
 </patchbay>
 
