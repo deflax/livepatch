@@ -38,3 +38,6 @@ software:
     - camera1: display capture of audio software
     - camera2: logitech c922 to record controllers
     - camera3: android ip cam (optional)
+
+
+![JackRouter](https://raw.githubusercontent.com/deflax/livepatch/master/screenshots/live-obs.png)

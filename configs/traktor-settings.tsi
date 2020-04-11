@@ -46,7 +46,7 @@
 <Entry Name="Browser.List.AllowInplaceEdit" Type="0" Value="1"></Entry>
 <Entry Name="Browser.List.Downloads" Type="3" Value="36 0 47 30 -100 24 -19 2 248 3 174 4 46 5 -118 6 -79 7 120 8 100 9 100 10 -100 11 -35 12 -100 13 -100 14 -264 15 -200 16 100 17 -100 18 100 19 100 20 100 21 80 22 -80 23 -74 25 -80 26 -80 27 -100 28 -100 29 -100 1 -100 31 100 32 -100 33 -100 34 -100 35 -100 "></Entry>
 <Entry Name="Browser.List.History" Type="3" Value="39 0 35 1 16 2 239 3 75 4 100 5 100 6 50 7 100 8 35 9 100 10 100 11 100 12 35 13 100 14 100 15 100 16 200 17 100 18 100 19 100 20 100 21 100 22 80 23 80 24 74 25 100 26 80 27 80 28 207 29 100 30 100 31 100 32 100 33 100 34 100 35 100 36 100 37 100 38 100 "></Entry>
-<Entry Name="Browser.List.Normal" Type="3" Value="39 0 47 1 55 25 82 2 274 3 204 5 81 7 275 28 100 22 -76 27 -88 11 -229 9 101 8 114 4 -55 6 -50 10 -100 12 -35 13 -100 14 -100 15 -100 16 -200 17 -100 18 -100 19 -100 20 -100 21 -100 23 -80 24 -74 26 -80 29 -100 30 -100 31 -100 32 -35 33 -100 34 -100 35 -100 36 -100 37 -100 38 -100 "></Entry>
+<Entry Name="Browser.List.Normal" Type="3" Value="39 0 580 1 55 25 -82 2 274 3 204 5 81 7 275 28 100 22 -76 27 -88 11 -229 9 101 8 114 4 -55 6 -50 10 -100 12 -35 13 -100 14 -100 15 -100 16 -200 17 -100 18 -100 19 -100 20 -100 21 -100 23 -80 24 -74 26 -80 29 -100 30 -100 31 -100 32 -35 33 -100 34 -100 35 -100 36 -100 37 -100 38 -100 "></Entry>
 <Entry Name="Browser.List.RowHeight" Type="1" Value="21"></Entry>
 <Entry Name="Browser.PreparationList" Type="3" Value="$PLAYLIST/tPreparation"></Entry>
 <Entry Name="Browser.Search.Hide" Type="0" Value="0"></Entry>
@@ -355,7 +355,7 @@
 <Entry Name="Status.FX Panel Mode" Type="5" Value="0;1;0;0"></Entry>
 <Entry Name="Status.FX Restore Preset on Switch" Type="5" Value="1"></Entry>
 <Entry Name="Status.Filter Mode" Type="5" Value="2"></Entry>
-<Entry Name="Status.Loop Size" Type="5" Value="10;7;10;7"></Entry>
+<Entry Name="Status.Loop Size" Type="5" Value="7;10;10;10"></Entry>
 <Entry Name="Status.Match EQ/Filter Models to NI Mixer" Type="5" Value="1"></Entry>
 <Entry Name="Status.Multicore Support" Type="5" Value="1"></Entry>
 <Entry Name="Status.Quant On" Type="5" Value="0"></Entry>
