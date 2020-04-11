@@ -2,40 +2,36 @@ digital music setup deflax 2020
 
 software:
 - jack:
-  - links:
-    - from system capture mic to reason (mic/line input 1/2)
-    - from traktor to reason (4 stereo decks)
-    - from reason to system playback (monitor output 1/2, cue out via headphones 3/4)
-    - from reason to reaper (monitor out)
+  - from system capture to reason (mic/line input 1/2)
+  - from traktor to reason (4 stereo decks)
+  - from reason to system playback (monitor output 1/2, cue out via headphones 3/4)
+  - from reason to reaper (monitor out)
 - reaper:
-  - links:
-    - bridge between jackrouter and obs via ReaRoute (as obs-asio do not like jackrouter for some reason and i failed compiling it on my own with the portaudio branch :)
+  - bridge between jackrouter and obs via ReaRoute (as obs-asio do not like jackrouter for some reason and i failed compiling it on my own with the portaudio branch :)
 - native instruments traktor pro 3
-  - provides:
-    - 4 decks beatmatched and routed via jack (audio only, no timeline sync)
+  - 4 decks beatmatched and routed via jack (audio only, no timeline sync)
 - propellerhead reason 10
-  - provides:
-    - simplified model 1 style EQ
-    - 8 channel mixer
-    - effects dsp
-    - drum machines
-    - modular synths
-  - controller hardware:
+  - simplified model 1 style EQ
+  - 8 channel mixer
+  - effects dsp
+  - drum machines
+  - modular synths
+  - controllers:
     - akai midimix:
-      - controls:
-        - mixer (faders 1-8)
-        - cue out (rec arm 1-8)
-        - eq (knob 1-8 mid + bottom)
-        - fx (knob 1-8 top)
-        - monitor out
+      - mixer (faders 1-8)
+      - cue out (rec arm 1-8)
+      - eq (knob 1-8 mid + bottom)
+      - fx (knob 1-8 top)
+      - monitor out
     - novation remote le 25:
-      - controls:
-        - drum machine parameters  (knob 1-4 A)
-        - drum machine mute (button 1-4 A)
-        - drum machine pattern (button 5-8 A)
-        - fx rack (knob 5-9 A)
-        - modular synths
-        - drum machines
+      - drum machine parameters  (knob 1-4 A)
+      - drum machine mute (button 1-4 A)
+      - drum machine pattern (button 5-8 A)
+      - fx rack (knob 5-9 A)
+      - modular synths (keys)
+      - tempo decimal 000-500, 500-999 (pitch)
+      - audio capture volume (mod)
+      - audio capture fx (trackpad x1,x2)
 - obs:
   - accepts:
     - input:  ReaRoute out
